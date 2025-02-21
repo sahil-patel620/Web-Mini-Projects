@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guessNumber.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Guess the number</title>
+</head>
+<body>
+    <nav >
+        <a href="../" id="home" aria-current="page">Home</a>
+        <a href="" target="_blank">Linked In</a>
+    </nav>
+    <div id="wrapper">
+        <h1>Number guessing game</h1>
+        <form class="form">
+            <p>Try and guess a random number between 1 to 100</p>
+            <p>You have 10 attempts to guess the right number.</p>
+            <h1>Guess a number</h1>
+            <input type="text" id="guessField">
+            <button type="submit" id="subt">Submit guess</button>
+        <div class="footer">
+            <p class="update">Previous Guesses: <span class="guesses"></span></p>
+            <p class="update">Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+        </form>
+    </div>
+    <div id="confetti-container"></div> <!-- Added container for confetti -->
+    <script src="guessNumber.js"></script>
+</body>
+</html>
