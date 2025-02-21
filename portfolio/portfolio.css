@@ -38,8 +38,7 @@ nav{
 }
 
 nav ul{
-    display: flex;
-    justify-content: center;
+    display: flex; 
 }
 
 nav ul li {
