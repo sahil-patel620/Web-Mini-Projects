@@ -14,23 +14,26 @@
 }
 .hero{
     height: 100vh;
-    width:100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     background:var(--primaey-color);
     font-family: sans-serif;
     position: relative;
 }
 
 nav{
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
+    width: 80%;
+    margin-left:3%;
+    padding: 1% ;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo{
-    width: 90px;
+    width: 7vw;
     cursor: pointer;
 }
 
@@ -41,6 +44,7 @@ nav ul li{
 }
 
 nav ul li a{
+    font-size: 1vw;
     text-decoration: none;
     color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
@@ -51,8 +55,8 @@ nav ul li a:hover{
 }
 
 .info{
-    margin-left: 8%;
-    margin-top: 15%;
+    margin-left: 6%;
+    margin-top: 13%;
 }
 
 .info h1{
@@ -78,6 +82,11 @@ span{
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
+}
+
+.info a:hover{
+    background-color: red;
+    font-weight: 520;
 }
 
 .img-box{
@@ -106,7 +115,7 @@ span{
 }
 
 .social-links{
-margin-left: 8%;
+margin-left: 6%;
 margin-top: 25px;
 }
 
@@ -123,12 +132,68 @@ margin-top: 25px;
 }
 
 #icon{
-    width: 18px;
-    height: 18px;
+    width: 1.6vw;
+    height: 10%;
+    margin-right: 2vw;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 #icon:hover{
     transform: scale(1.03);
+}
+
+#menu-icon{
+    font-size:3vh;
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: none;
+
+}
+
+/* body{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.child {
+    background-color: #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    text-align: center;
+} */
+
+
+@media (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #menu-icon{
+        display: block;
+        flex-wrap: nowrap;
+        padding: 0;
+        margin-left: 60vw;
+    }
+    .logo{
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        height: 6vh;
+        width: 6vh;
+    }
+    #icon{
+        display: none;
+    }
+    nav ul li a{
+        display: none;
+    }
+
+    .resp{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }

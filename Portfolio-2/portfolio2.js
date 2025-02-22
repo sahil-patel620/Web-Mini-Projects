@@ -11,7 +11,7 @@ const logo = document.querySelector(".logo")
 
 icon.addEventListener("click", function(){
     body.classList.toggle("dark-mode");
-
+    
     if(body.classList.contains("dark-mode")){
         icon.src= "assests/sun.png";
         logo.src ="assests/sahil-logo2.png"
